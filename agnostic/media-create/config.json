@@ -1,0 +1,9 @@
+{
+  "library": "~/media-library",
+  "key_file": "~/.config/media-create/gemini.key",
+  "author": "the author",
+  "credit_by": "",
+  "detect_model": "gemini-3.8-flash",
+  "edit_model": "gemini-3-pro-image",
+  "source_long_edge": 2400
+}

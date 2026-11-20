@@ -1,0 +1,63 @@
+# Glossary: semiotics-decoding shelf
+
+Merged terms across all five chapters, alphabetical. Each entry names the chapter slug it comes from; a few terms appear in more than one chapter and carry both slugs.
+
+- **anchorage** (rhetoric-of-the-image): text that fixes an image's polysemy and directs the reader to one meaning; the repressive function of captions, dominant in press and advertising.
+- **arbitrariness** (course-in-general-linguistics): the bond between signifier and signified is conventional, not natural; community convention is the only glue.
+- **code** (theory-of-semiotics): the rule correlating elements of one system with elements of another, expression plane to content plane.
+- **concept** (mythologies): the ideological content myth attaches to the drained form in the second-order system.
+- **connotation** (mythologies, rhetoric-of-the-image): the second-order cultural meaning a sign carries; in images, the meaning triggered by how the denoted material is arranged. The layer where ideology enters and where readings diverge.
+- **connotator** (rhetoric-of-the-image): a signifier of connotation; one discontinuous sign within an image, such as the tricolor palette or the string bag in the Panzani ad.
+- **cultural unit** (theory-of-semiotics): the meaning a culture assigns to a sign, independent of any real referent; signs work fine about nonexistent things.
+- **decoding** (encoding-decoding): the audience's meaning production, run through its own frameworks of knowledge, relations, and technical infrastructure.
+- **denotation** (mythologies, rhetoric-of-the-image): the first-order, literal meaning of a sign; in images, the objects actually in the frame. Feels fixed, which is what lets connotation ride on it.
+- **depoliticized speech** (mythologies): myth's register; statements of fact with the politics removed.
+- **diachronic** (course-in-general-linguistics): analysis of change in elements across time, as opposed to the system at one moment.
+- **dominant-hegemonic position** (encoding-decoding): decoding inside the same code the message was encoded in; accepting the preferred reading.
+- **encoding** (encoding-decoding): production of a message inside institutional frameworks, technical means, and a professional code.
+- **encyclopedia** (theory-of-semiotics): meaning as a traversable network of interpretants with no final term, against the dictionary model; Eco's Model Q.
+- **ex-nomination** (mythologies): the dominant class's trick of never being named, so its interests read as universal.
+- **extra-coding** (theory-of-semiotics): the normal state of real interpretation, a mix of overcoding and undercoding running simultaneously.
+- **form** (mythologies): the first-order sign drained of its history so myth can use it as a signifier.
+- **having-been-there** (rhetoric-of-the-image): the photograph's temporality at the denoted level; the record that the scene existed, which certifies the image and launders its connotation. Void in generative imagery.
+- **identification** (mythologies): the mythic figure that reduces the other to a version of the self, or exoticizes it.
+- **inoculation** (mythologies): admitting a contained evil to protect the institution from the principal one; the "Operation Margarine" move.
+- **interpretant** (theory-of-semiotics): another sign that translates a sign; the engine of unlimited semiosis.
+- **Italianicity** (rhetoric-of-the-image): Barthes's worked example of a connoted signified; the condensed essence of "Italian" available to a non-Italian audience.
+- **langue** (course-in-general-linguistics): the shared system of rules and distinctions held by a community; the object of study.
+- **lexicon** (rhetoric-of-the-image): a body of cultural knowledge (practical, national, cultural, aesthetic) a viewer must already hold to receive a given connotation.
+- **linearity** (course-in-general-linguistics): signifiers unfold in time; one of the two qualifiers of the dyadic sign alongside arbitrariness.
+- **message without a code** (rhetoric-of-the-image): the photograph's denoted layer, an analogical record rather than a coded sign system; the point Eco disputes.
+- **myth** (mythologies): a second-order sign system that presents historical, motivated meaning as natural fact.
+- **naturalized code** (encoding-decoding): a code so widespread it presents as plain reality rather than convention; de-naturalizing it is the work of analysis.
+- **negotiated code** (encoding-decoding): accepting the grand frame in the abstract while making situated exceptions; the modal real-world position.
+- **neither-norism** (mythologies): the mythic figure that rejects both sides to avoid the question.
+- **oppositional code** (encoding-decoding): full comprehension of the preferred reading, retotalized in a contrary frame; reading "national interest" as "class interest."
+- **overcoding** (theory-of-semiotics): building ever more specific subcodes on top of established codes; the mechanism behind genre, style, iconography, and etiquette.
+- **paradigmatic (associative) axis** (course-in-general-linguistics): the set of signs that could substitute for a sign in its slot; a choice is legible only against the options not chosen.
+- **parole** (course-in-general-linguistics): individual acts of speech or expression; the observable evidence trail of langue.
+- **polysemy** (rhetoric-of-the-image): an image's inherent openness to multiple readings, resolved by anchorage or by the viewer's lexicons.
+- **polysemy structured in dominance** (encoding-decoding): multiple readings are possible, but not equally supported or equally cheap; texts lean on the dominant cultural order.
+- **preferred reading** (encoding-decoding): the meaning a text is built to invite, backed by institutional power, professional codes, and naturalized common sense; invited but never enforced.
+- **privation of history** (mythologies): the mythic figure by which an object appears from nowhere, its making forgotten.
+- **quantification of quality** (mythologies): the mythic figure that counts effects and skips meaning.
+- **ratio difficilis** (theory-of-semiotics): sign production that invents expression directly from content when no expression type exists; the mark of genuine invention.
+- **ratio facilis** (theory-of-semiotics): sign production that stamps tokens from an existing expression type; commodity replication.
+- **relative motivation** (course-in-general-linguistics): some signs are partly analyzable, like the compound "nineteen"; systems sit on a spectrum from fully arbitrary to partly motivated.
+- **relay** (rhetoric-of-the-image): text that complements the image and carries meaning the image cannot, such as dialogue or sequence; dominant in comics and film.
+- **s-code** (theory-of-semiotics): a system of internal differences, a repertoire, as distinct from the code proper that correlates two systems.
+- **semiology** (course-in-general-linguistics): the projected general science of signs within social life, of which linguistics is one branch; the license for reading fashion, food, and gesture as sign systems.
+- **semiotic threshold** (theory-of-semiotics): the lower and upper bounds of semiotics; below, physical signal passage; above, the whole of culture as communication.
+- **sign** (course-in-general-linguistics): the two-sided union of a signifier and a signified; the basic unit of a code.
+- **sign-function** (theory-of-semiotics): a transitory correlation of an expression with a content, made and unmade by codes; there is no fixed sign.
+- **signification** (mythologies): the completed second-order sign, form plus concept, as consumed by the reader of myth.
+- **signified** (course-in-general-linguistics): the concept a form is bound to.
+- **signifier** (course-in-general-linguistics): the perceptible form, the sound-image.
+- **statement of fact** (mythologies): the mythic figure of proverb-voiced ideology.
+- **synchronic** (course-in-general-linguistics): analysis of the system as it stands at one moment; the state speakers actually live inside.
+- **syntagmatic axis** (course-in-general-linguistics): the relations a sign has with what it combines with in sequence.
+- **systematically distorted communication** (encoding-decoding): patterned code mismatch between encoders and decoders, commonly misread as communication failure.
+- **tautology** (mythologies): the mythic figure that refuses paraphrase; "it is what it is."
+- **undercoding** (theory-of-semiotics): assigning rough provisional meaning to imprecisely understood material; the normal state when reading a new scene.
+- **unlimited semiosis** (theory-of-semiotics): every interpretant of a sign is another sign, so interpretation never reaches a final term.
+- **value (valeur)** (course-in-general-linguistics): a unit's meaning as fixed by its differences from neighboring units; change one term and the neighbors reprice.

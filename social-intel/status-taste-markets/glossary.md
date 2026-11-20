@@ -1,0 +1,43 @@
+# Glossary: status-taste-markets shelf
+
+Merged terms across all five chapters, alphabetical. Each entry names its source chapter slug; shared terms name every chapter that carries them.
+
+- **Appeal** (musiclab-artificial-cultural-market): a song's market share in the independent condition; the quality proxy. Correlates with success only at the extremes.
+- **Cachet** (status-and-culture): prestige a convention borrows from its highest-status users; lost as adoption spreads downward.
+- **Convention** (status-and-culture): an arbitrary practice a group treats as natural and binding; the unit culture is made of.
+- **Counter-signaling** (status-and-culture): deliberate under-signaling by actors secure enough not to need proof; old money's patina and understatement.
+- **Cumulative advantage** (musiclab-artificial-cultural-market, diverse-local-trends): early, essentially random popularity differences amplified because people preferentially sample what is already popular; decouples outcomes from intrinsic quality between the floor and ceiling. Also called the Matthew effect.
+- **Divergent local subcultures** (wide-social-influence): different cultural equilibria in populations with near-identical preference distributions, produced by path-dependent influence through different partially similar peers.
+- **Enculturation of the record** (club-cultures): how records shifted from inauthentic copies of live music to the authentic medium of DJ culture; proof that authenticity is manufactured and movable.
+- **Fashion cycle** (status-and-culture): innovation at the top or ambitious margin, early adoption for cachet, mass imitation, signal devaluation, elite abandonment, replacement. Triggered by saturation, not time: the moment the signal stops discriminating.
+- **Gini coefficient (G)** (musiclab-artificial-cultural-market, diverse-local-trends): inequality of market share across items within a world; higher under social influence, roughly doubling in MusicLab's ranked-list condition.
+- **Independent condition** (musiclab-artificial-cultural-market): participants choose with no popularity information; yields the appeal baseline against which influence worlds are compared.
+- **Inverted-U influence curve** (wide-social-influence): influence on novel adoption peaking at intermediate peer similarity; low at both extremes of similarity.
+- **Local trend** (diverse-local-trends): a region of feature space a single world's winners converge on; coherent within a world, divergent across worlds. A property of a community, not of the culture.
+- **Mainstream, the** (club-cultures): the scene's imagined, feminized, commercial other; a construct used for boundary work, not an empirically real audience.
+- **Market share (m_i)** (musiclab-artificial-cultural-market): fraction of a world's total downloads going to item i; the outcome variable of the parallel-worlds experiments.
+- **Micro-media** (club-cultures): flyers, fanzines, pirate radio, record shops; the channels that assemble a crowd.
+- **Moral panic as hype** (club-cultures): mass-media condemnation that certifies a scene as transgressive, recruits members, and extends its life; courted deliberately as PR.
+- **Morphological embedding** (diverse-local-trends): an item's coordinates in the generative model's feature space, letting trend content be measured directly rather than inferred from ranked lists.
+- **MusicLab** (musiclab-artificial-cultural-market): the web-based experimental platform behind the 2006 Science study; 14,341 participants, 48 songs, 8 influence worlds plus 1 independent world.
+- **Niche media** (club-cultures): music and style press; the outlets that name and construct subcultures as much as report them.
+- **Omnivore taste** (status-and-culture): elite distinction through breadth across genres rather than highbrow exclusivity; the current top-tier adaptation to the status value crisis.
+- **Parallel-worlds design** (musiclab-artificial-cultural-market, diverse-local-trends): multiple identical markets seeded with the same items, populations randomized across them; cross-world divergence isolates social influence from content and population differences.
+- **Partial homophily** (wide-social-influence): peer similarity high enough to persuade, low enough to carry novelty; the generative zone where the unexpected enters culture.
+- **Patina** (status-and-culture): accrued historical value that lets a convention survive the fashion cycle as a classic rather than a fad.
+- **Preference-adoption decoupling** (wide-social-influence): the gap between what a population would choose in isolation and what it adopts under influence; where hits and subcultures come from under wide influence.
+- **Quality floor and ceiling** (musiclab-artificial-cultural-market): the bounds appeal places on outcomes; the best items rarely fail, the worst rarely win, and everything between is path dependent.
+- **Self-fulfilling prophecy** (musiclab-artificial-cultural-market): the Salganik and Watts 2008 follow-up; inverting displayed rankings made false hits partly stick, with the best songs slowly recovering. Perceived popularity is itself a causal force.
+- **Selling out** (club-cultures): losing subcultural capital by letting it diffuse to outsiders via mainstream exposure; insider policing of it marks capital near peak valuation.
+- **Signal salience** (diverse-local-trends): how prominently popularity information is displayed and used to order content; a causal lever separate from the information's mere availability.
+- **Signaling cost** (status-and-culture): the money, time and effort, or cultural capital required to send a signal credibly; falling cost depreciates cachet regardless of current volume.
+- **Social influence world / condition** (musiclab-artificial-cultural-market, diverse-local-trends): a market whose participants see that world's popularity signals (counts, orderings); contrasted with the independent condition.
+- **Status** (status-and-culture): position in a social hierarchy that governs how others treat you; a universal, mostly denied motive.
+- **Status taboo** (status-and-culture): the social norm against admitting status motives, which keeps them invisible and therefore predictive.
+- **Status value crisis** (status-and-culture): the internet-age condition of collapsed signaling costs, fragmented audiences, metric substitution, and cycle speed outrunning cachet formation; yields microtrends, nostalgia, and stuck-feeling culture.
+- **Subcultural capital** (club-cultures): hipness and insider knowledge functioning as status currency within a scene; objectified in artifacts and looks, embodied in slang, moves, and ease.
+- **Three-tier media taxonomy** (club-cultures): micro-media assemble, niche media construct and name, mass media authenticate through condemnation; the same event does different work per tier.
+- **Unpredictability (u_i / U)** (musiclab-artificial-cultural-market, diverse-local-trends): average absolute difference in an item's market share across pairs of worlds, averaged over items; the measure of how little initial conditions determine winners.
+- **Unpredictability paradox** (wide-social-influence): in influence-driven markets, winners between the quality floor and ceiling cannot be forecast from preferences or quality.
+- **Wide bridges** (wide-social-influence): Centola's tie-redundancy condition for complex contagion; related to but distinct from wide social influence, which concerns peer composition in taste space rather than tie structure.
+- **Wide social influence** (wide-social-influence): influence arriving from a peer set that spans beyond one's own preference neighborhood; the regime in which adoption decouples from preference.

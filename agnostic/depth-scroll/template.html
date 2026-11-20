@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>/*TITLE*/</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap">
+<style>
+/*SOURCE_CSS*/
+</style>
+<style>
+/* A depth-scroll page (the depth-scroll skill). The scroll is the
+   camera: a tall track holds one stop per station, a sticky stage fills the viewport under the
+   pinned header, and each station sits GAP world units behind the one before it, so scrolling one
+   stage height carries the next station from the deep to the screen plane. Behind the stations a
+   stream of cards flies toward the viewer on a clock, as WhatTheFad's trend chips do, and the
+   scroll's speed is added to theirs. Without JavaScript, or with reduced motion asked for, the page
+   is the same stations stacked flat. Figures sit on the daylight plate. */
+:root {
+  --ground: #FBF9F2; --card: #FFFEF9; --ink: #3B3629; --ink-2: #6E6754; --ink-3: #948B73;
+  --line: #E9E3D2; --line-soft: #F1ECDD; --sage: #6B7D58; --sage-deep: #556844;
+  --plate: #FBF9F2; --plate-line: #E9E3D2;
+  --f-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --f-body: Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --ground: #191811; --card: #22211A; --ink: #E6E0CF; --ink-2: #ADA694; --ink-3: #857E6B;
+  --line: #383629; --line-soft: #2A2921; --sage: #8A9C71; --sage-deep: #A2B389;
+  --plate: #FBF9F2; --plate-line: #E9E3D2;
+  color-scheme: dark;
+}
+body { margin: 0; background: var(--ground); color: var(--ink); font: 13px/1.55 var(--f-body); }
+a { color: var(--sage-deep); }
+code { font: 12px 'Courier New', Courier, monospace; }
+
+/* flat: the default, and the reduced-motion page */
+.depth { position: relative; }
+.mark { height: 0; }
+.stage { position: relative; }
+.field, .rail { display: none; }
+.slot { padding: 28px 16px 0; }
+.station { box-sizing: border-box; width: min(760px, 100%); margin: 0 auto; background: var(--card); border: 1px solid var(--line); padding: 18px 20px 18px; }
+
+/* depth: switched on by the script when motion is allowed */
+:root.deep { scroll-snap-type: y proximity; }
+.deep .mark { position: absolute; left: 0; width: 1px; height: 1px; }
+.deep .stop { scroll-snap-align: start; }
+.deep .mark { scroll-margin-top: 0 !important; }   /* the header lands anchors below itself; a stop lands at the top, under the sticky stage */
+.deep .stage { position: sticky; top: var(--pin-h, 0px); height: calc(100dvh - var(--pin-h, 0px)); overflow: hidden; }
+.deep .field, .deep .stations { position: absolute; inset: 0; perspective: 900px; perspective-origin: 50% 50%; }
+.deep .field { display: block; pointer-events: none; z-index: 0;
+  /* WhatTheFad's mask: the deep centre, where far cards gather at the vanishing point, stays quiet */
+  mask-image: radial-gradient(ellipse 62% 54% at center, transparent 0%, transparent 18%, rgba(0,0,0,.85) 54%, #000 84%);
+  -webkit-mask-image: radial-gradient(ellipse 62% 54% at center, transparent 0%, transparent 18%, rgba(0,0,0,.85) 54%, #000 84%); }
+.deep .stations { z-index: 1; pointer-events: none; }
+.deep .slot { position: absolute; inset: 0; padding: 0; will-change: transform, opacity; visibility: hidden; }
+.deep .station { position: relative; box-shadow: 0 24px 60px -32px rgba(0, 0, 0, 0.45); }
+.deep .slot.on .station { pointer-events: auto; }
+.deep .rail { display: flex; }
+
+.kick { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 4px; }
+.station h2 { font: 400 28px/1.15 var(--f-display); margin: 0 0 8px; text-wrap: balance; }
+.lead { margin: 0 0 12px; color: var(--ink-2); max-width: 64ch; text-wrap: pretty; }
+.lede { font: 400 24px/1.38 var(--f-display); margin: 4px 0 14px; text-wrap: pretty; }
+.note { color: var(--ink-3); font-size: 12px; margin: 0 0 8px; }
+
+figure.fig { margin: 0; }
+.plate { background: var(--plate); color: #3B3629; border: 1px solid var(--plate-line); padding: 12px; overflow-x: auto; }
+.plate > svg { display: block; width: 100%; height: auto; min-width: 600px; margin: 0 auto; }
+.plate.duo { display: flex; gap: 16px 24px; overflow-x: auto; }
+.plate.duo > div { flex: 1 1 0; min-width: 300px; }
+.plate.duo svg { display: block; width: 100%; height: auto; }
+.plate .cap { font-size: 11px; color: #6E6754; margin: 0 0 6px; }
+figcaption { font-size: 12px; color: var(--ink-2); margin: 8px 0 0; }
+
+/* the source page's drawing classes arrive in the style block above */
+
+.cards { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; margin-top: 10px; }
+.cards figure { margin: 0; display: flex; align-items: center; gap: 8px; }
+.cards img { display: block; width: 58px; height: 58px; object-fit: contain; background: var(--plate); border: 1px solid var(--plate-line); padding: 3px; }
+.cards figcaption { margin: 0; font-size: 11.5px; color: var(--ink); font-weight: 700; }
+.cards .from { margin: 0 0 0 auto; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+ul.src { padding-left: 18px; margin: 0 0 10px; font-size: 12px; }
+ul.src li { margin: 0 0 5px; }
+
+/* the stream: WhatTheFad's chips, as the index's concept cards */
+.ch { position: absolute; left: 50%; top: 50%; display: inline-flex; align-items: center; gap: 7px; padding: 4px 9px 4px 4px;
+  border: 1px solid var(--line); border-radius: 3px; background: color-mix(in srgb, var(--ground) 82%, transparent);
+  color: var(--ink-3); font-size: 11.5px; white-space: nowrap; will-change: transform, opacity; transition: color .4s, border-color .4s; }
+.ch img { width: 30px; height: 30px; object-fit: cover; border-radius: 2px; background: var(--plate); filter: sepia(.15) saturate(.9); }
+.ch.lit { color: var(--ink); border-color: var(--sage); }
+.ch.lit img { filter: none; }
+
+/* the rail: one stop per station, down the right edge of the stage */
+.rail { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); z-index: 2; flex-direction: column; gap: 4px; }
+.rail button { all: unset; box-sizing: border-box; width: 18px; height: 18px; display: grid; place-items: center; cursor: pointer; border-radius: 50%; }
+.rail button::before { content: ""; width: 7px; height: 7px; border-radius: 50%; border: 1px solid var(--ink-3); transition: background .2s, border-color .2s, transform .2s; }
+.rail button:hover::before { border-color: var(--ink); }
+.rail button[aria-current="true"]::before { background: var(--sage); border-color: var(--sage); transform: scale(1.3); }
+.rail button:focus-visible { outline: 2px solid var(--sage); outline-offset: 1px; }
+
+@media (max-width: 640px) {
+  .station { padding: 14px 14px; }
+  .deep .station { width: calc(100% - 46px); margin-left: 14px; }   /* the rail keeps the right edge */
+  .station h2 { font-size: 23px; }
+  .lede { font-size: 20px; }
+  .lead { font-size: 12.5px; }
+  .deep .cards { display: none; }
+  .plate > svg { min-width: 560px; }
+  .rail { right: 2px; }
+}
+/*EXTRA_CSS*/
+</style>
+</head>
+<body>
+<main class="depth" id="depth">
+/*MARKS*/
+<div class="stage">
+<div class="field" aria-hidden="true">/*CHIPS*/</div>
+<div class="stations">
+/*SLOTS*/
+</div>
+<nav class="rail" aria-label="Stations">/*RAIL*/</nav>
+</div>
+</main>
+<script>
+(() => {
+  const d = document, root = d.documentElement;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    // the flat page stands, and its contents point at the stations: each stop moves to the head of
+    // its station before the header builds the contents
+    d.querySelectorAll('#depth .mark').forEach((m) => {
+      const sl = d.querySelector('.slot[data-i="' + m.dataset.at + '"]');
+      if (sl) sl.insertBefore(m, sl.querySelector('.station'));
+    });
+    return;
+  }
+  root.classList.add('deep');
+
+  const depth = d.getElementById('depth'), stage = depth.querySelector('.stage');
+  const field = stage.querySelector('.field');
+  const slots = [...stage.querySelectorAll('.slot')], N = slots.length;
+  const stops = [...depth.querySelectorAll('.stop')], marks = [...depth.querySelectorAll('.mark')];
+  const rail = [...stage.querySelectorAll('.rail button')];
+
+  // ── stations: world depth, the camera, and how a station passes ──
+  const PERSP = 900;       // matches .stations/.field perspective in the CSS
+  const GAP = 1400;        // world units between two stations
+  const AHEAD = 2.2 * GAP; // how far ahead a station is drawn at all
+  const PASS = 300;        // z at which a passing station has faded out (scale PERSP/(PERSP-PASS) = 1.5)
+  const LIFT = 36;         // px a station sits low per GAP of distance, so it rises into place
+
+  let H = 0, W = 0, tops = [];
+  function layout() {
+    // where the contents column is fixed down the left, the stage starts to its right, so the
+    // stream never flies behind the contents' text
+    const nav = d.querySelector('nav.pin-toc');
+    const side = nav && !nav.hidden && getComputedStyle(nav).position === 'fixed'
+      ? Math.max(0, Math.ceil(nav.getBoundingClientRect().right + 12 - depth.getBoundingClientRect().left)) : 0;
+    stage.style.marginLeft = side + 'px';
+    H = stage.clientHeight; W = stage.clientWidth;
+    const step = Math.max(H, 420);
+    depth.style.height = ((N - 1) * step + innerHeight) + 'px';   // the last stop reaches the top of the window
+    marks.forEach((m) => { m.style.top = (+m.dataset.at * step) + 'px'; });
+    slots.forEach((sl) => {
+      const st = sl.firstElementChild, sh = st.offsetHeight;
+      sl._fit = Math.min(1, (H - 24) / sh);
+      st.style.top = Math.round((H - sh) / 2) + 'px';   // whole pixels, so text at rest is crisp
+    });
+    const y0 = scrollY;
+    tops = stops.map((s) => s.getBoundingClientRect().top + y0);
+    painted = null;
+  }
+
+  // the scroll position as a station index: whole at each stop, fractional between them
+  function target() {
+    const y = scrollY;
+    if (y <= tops[0]) return 0;
+    for (let i = 0; i < N - 1; i++) if (y < tops[i + 1]) return i + (y - tops[i]) / (tops[i + 1] - tops[i]);
+    return N - 1;
+  }
+
+  let painted = null;
+  function paintStations(p) {
+    if (p === painted) return;
+    painted = p;
+    for (let i = 0; i < N; i++) {
+      const sl = slots[i], z = (p - i) * GAP;   // z > 0: passing the viewer; z < 0: still ahead
+      const show = z > -AHEAD && z < PASS;
+      if (show !== sl._v) { sl.style.visibility = show ? 'visible' : 'hidden'; sl._v = show; }
+      if (!show) continue;
+      const far = z < 0 ? -z / AHEAD : 0;
+      const gone = z >= 0 ? z / PASS : 0;
+      sl.style.opacity = (z >= 0 ? (1 - gone) * (1 - gone) : (1 - far) * (1 - far)).toFixed(3);   // the one waiting behind stays dim
+      const lift = z < 0 ? (-z / GAP) * LIFT : 0;
+      sl.style.transform = `translate3d(0, ${lift.toFixed(1)}px, ${z.toFixed(1)}px) scale(${sl._fit.toFixed(4)})`;
+    }
+  }
+
+  // ── the stream: WhatTheFad's renderTrendField, with the camera's speed added ──
+  const DEPTH = 2800, NEAR = 220, BASE = 46;
+  const chips = [...field.querySelectorAll('.ch')].map((el) => ({ el, set: el.dataset.set, x: 0, y: 0, z: 0, v: 0.7 + Math.random() * 0.6 }));
+  function spawn(c, z) {
+    const a = Math.random() * Math.PI * 2;
+    c.x = Math.cos(a) * (0.2 + Math.random() * 0.42) * (W || innerWidth);
+    c.y = Math.sin(a) * (0.18 + Math.random() * 0.4) * (H || innerHeight);
+    c.z = z;
+  }
+  function paintField(dt, speed) {
+    for (const c of chips) {
+      c.z += (BASE + speed) * c.v * dt;
+      if (c.z > NEAR) spawn(c, -DEPTH + ((c.z - NEAR) % DEPTH));    // flown past: back to the deep
+      else if (c.z < -DEPTH) spawn(c, NEAR - ((-DEPTH - c.z) % DEPTH)); // travelling back: re-enter behind the viewer
+      const fadeIn = Math.min(1, (c.z + DEPTH) / (DEPTH * 0.25));
+      const fadeOut = c.z > 60 ? Math.max(0, 1 - (c.z - 60) / (NEAR - 60)) : 1;
+      c.el.style.transform = `translate(-50%,-50%) translate3d(${c.x.toFixed(1)}px, ${c.y.toFixed(1)}px, ${c.z.toFixed(1)}px)`;
+      c.el.style.opacity = (0.85 * fadeIn * fadeOut).toFixed(3);
+      c.el.style.zIndex = Math.round(c.z + DEPTH);   // nearer cards paint on top
+    }
+  }
+
+  // ── which station is in front: pointer events, the rail, the lit cards ──
+  let front = -1, live = -1;
+  function setFront(i, at) {
+    const on = at ? i : -1;
+    if (on !== live) { slots.forEach((sl, k) => sl.classList.toggle('on', k === on)); live = on; }
+    if (i === front) return;
+    front = i;
+    rail.forEach((b, k) => { if (k === i) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current'); });
+    const lit = (slots[i].dataset.lit || '').split(' ').filter(Boolean);
+    chips.forEach((c) => c.el.classList.toggle('lit', lit.includes(c.set)));
+  }
+
+  function go(i) {
+    i = Math.max(0, Math.min(N - 1, i));
+    scrollTo({ top: tops[i], behavior: 'smooth' });
+  }
+  rail.forEach((b) => b.addEventListener('click', () => go(+b.dataset.go)));
+  slots.forEach((sl, i) => sl.addEventListener('focusin', () => { if (front !== i) scrollTo({ top: tops[i] }); }));
+  d.addEventListener('keydown', (e) => {
+    if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+    const t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    const k = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+    if (!k) return;
+    if (t && t.closest && t.closest('.plate') && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) return;   // a wide drawing pans
+    e.preventDefault();
+    go(Math.round(cam) + k);
+  });
+
+  // ── the loop: the camera eases toward the scroll, then everything paints from it ──
+  let cam = 0, last = performance.now();
+  function frame(now) {
+    const dt = Math.min((now - last) / 1000, 0.1);
+    last = now;
+    const want = target(), before = cam;
+    cam += (want - cam) * (1 - Math.exp(-dt * 9));
+    if (Math.abs(want - cam) < 1e-4) cam = want;
+    const speed = Math.max(-6000, Math.min(6000, ((cam - before) * GAP) / (dt || 1 / 60)));
+    paintStations(cam);
+    paintField(dt, speed * 0.9);
+    const i = Math.round(cam);
+    setFront(i, Math.abs(cam - i) < 0.12);
+    requestAnimationFrame(frame);
+  }
+
+  function start() {
+    layout();
+    lastW = innerWidth; lastH = stage.clientHeight;
+    chips.forEach((c) => spawn(c, -Math.random() * DEPTH));
+    cam = target();
+    requestAnimationFrame((t) => { last = t; frame(t); });
+  }
+  let rt = null, lastW = innerWidth, lastH = 0;
+  function onResize() {
+    const h = stage.clientHeight;
+    // a phone's toolbar sliding changes the height by a little; only a real change re-lays the track
+    if (innerWidth === lastW && Math.abs(h - lastH) < 120) return;
+    lastW = innerWidth; lastH = h;
+    clearTimeout(rt); rt = setTimeout(() => { const at = Math.round(cam); layout(); scrollTo({ top: tops[at] }); }, 120);
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(stage); else addEventListener('resize', onResize);
+  // the document is parsed by the time this runs: lay the track now, so a restored scroll position
+  // or a link to a stop lands on it, then again once images and the web font have settled heights
+  start();
+  const ready = d.fonts && d.fonts.ready ? d.fonts.ready : Promise.resolve();
+  addEventListener('load', () => ready.then(() => { layout(); lastH = stage.clientHeight; }));
+})();
+</script>
+</body>
+</html>

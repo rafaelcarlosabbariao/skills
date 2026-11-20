@@ -1,0 +1,70 @@
+# Glossary
+
+Merged terms across the shelf, alphabetical. Each entry names its source chapter; open `chapters/<slug>.md` for the full context.
+
+- **anchoring** (thinking-fast-and-slow): estimates drag toward a prior number, moving about 55 percent of the way in classic tests.
+- **attribute decomposition** (brain-on-music): separating low-level surface attributes (pitch, rhythm, tempo, timbre, loudness) from higher-order structure (meter, key, harmony, melody); usable on any cultural object as surface texture versus structure.
+- **auditory cheesecake** (brain-on-music): Pinker's claim that music is an evolutionary byproduct; the position Levitin argues against.
+- **availability cascade** (thinking-fast-and-slow): self-reinforcing loop where coverage inflates recall, which inflates perceived importance, which drives more coverage.
+- **availability heuristic** (thinking-fast-and-slow): judging frequency by ease of recall rather than by base rates.
+- **base-rate neglect** (thinking-fast-and-slow): ignoring background frequencies in favor of case-specific stories.
+- **clarity** (evolution-of-cooperation): being simple enough that partners can learn and trust your rule; one of Tit for Tat's four winning properties.
+- **click, whirr** (influence-cialdini): automatic fixed-action compliance released by a single trigger feature.
+- **cluster invasion** (evolution-of-cooperation): a small interacting group of cooperators overturning a population of defectors; cooperation enters through clusters, never one agent at a time.
+- **cognitive ease** (thinking-fast-and-slow): fluency mistaken for truth and quality; repetition raises fluency, and fluency raises belief and liking.
+- **collective stability** (evolution-of-cooperation): no single deviant strategy can invade a population playing the incumbent rule; Tit for Tat is collectively stable when w >= 2/3 under standard payoffs.
+- **commitment and consistency** (influence-cialdini): pressure to align with prior acts; binds hardest when the commitment is active, public, effortful, and seen as freely chosen.
+- **contrast principle** (influence-cialdini): the same option reads differently depending on what came just before it.
+- **crystallization window** (brain-on-music): adolescent period, roughly ages 12 to 22 with 14 as the pivot, in which lifelong musical preference sets; gives a datable cohort clock.
+- **discount parameter w** (evolution-of-cooperation): the weight of the next move relative to the current one, equivalently the probability the interaction continues; the formal shadow of the future.
+- **echo effect** (evolution-of-cooperation): endless alternating retaliation between two provocable strategies after a single defection.
+- **elephant and rider** (righteous-mind): automatic intuition versus conscious reasoning; the rider serves the elephant.
+- **entrainment** (brain-on-music): locking of body movement and neural timing to an external beat.
+- **expectation violation** (brain-on-music): the deviation between predicted and actual event; the source of felt emotion in music and the signature of deliberate human work.
+- **expressive responding** (power-of-us): stating a false belief as a loyalty signal rather than a conviction.
+- **foot-in-the-door** (influence-cialdini): small commitment that shifts self-image and enables larger compliance.
+- **forgiveness** (evolution-of-cooperation): willingness to restore cooperation after retaliating; the missing mechanic in endless feuds.
+- **frisson** (brain-on-music): the chills response, marked by mesolimbic dopamine release; music recruits the same reward circuitry as food, sex, and drugs.
+- **Glauconian reasoning** (righteous-mind): reasoning optimized for reputation rather than truth; a press secretary, not a scientist.
+- **hive switch** (righteous-mind): the capacity, triggered by synchrony, ritual, and awe, to shift from self-interest to group absorption.
+- **identity-based belief** (power-of-us): belief formation in which belonging, status, and moral goals compete with, and often beat, accuracy goals.
+- **identity entrepreneur** (power-of-us): an actor who defines, embodies, and mobilizes a group identity, naming who counts as us and who the rival is.
+- **in-group favoritism** (power-of-us): preference for us that drives most discrimination without requiring hatred of them.
+- **inverted-U of familiarity** (brain-on-music): liking peaks at intermediate familiarity and complexity; repeated exposure moves a work from unfamiliar to loved to exhausted.
+- **iterated Prisoner's Dilemma** (evolution-of-cooperation): repeated play with payoffs T=5, R=3, P=1, S=0; repetition is what makes reciprocal cooperation stable.
+- **loss aversion** (thinking-fast-and-slow): losses weigh roughly 2.25x equivalent gains; outcomes are coded against a reference point, not in absolutes.
+- **minimal group paradigm** (power-of-us): arbitrary category assignment (a coin flip, Klee versus Kandinsky) that still produces in-group favoritism, including sacrificing absolute gain for relative advantage.
+- **moral capital** (righteous-mind): the stock of norms and institutions that sustains a community's cooperation.
+- **moral contagion** (power-of-us): increased diffusion of messages carrying moral-emotional language, roughly 1.2x per moral-emotional word, bounded within identity networks.
+- **moral dumbfounding** (righteous-mind): holding a moral verdict after all supporting reasons are refuted; the field mark of a taboo.
+- **moral foundations** (righteous-mind): six evolved intuitive systems (Care, Fairness, Loyalty, Authority, Sanctity, Liberty) weighted differently across groups; a group's profile is a six-weight vector.
+- **moral matrix** (righteous-mind): the shared web of values, practices, and institutions that makes a community's morality self-evident inside and perverse outside.
+- **multiple-trace memory** (brain-on-music): each experience stored with situational context, so songs act as episodic retrieval cues; the mechanism under nostalgia markets.
+- **nice strategy** (evolution-of-cooperation): one that is never the first to defect.
+- **normative dissent** (power-of-us): criticism from committed members aimed at correcting harmful group norms; a leading indicator of norm change, not collapse.
+- **outside view** (thinking-fast-and-slow): forecasting from a reference class base rate before adjusting for case specifics; the corrective to the inside view and the planning fallacy.
+- **peak-end rule** (thinking-fast-and-slow): remembered experience scored by its peak moment and its ending, not its duration.
+- **pluralistic ignorance** (influence-cialdini): everyone scans everyone else's calm and concludes nothing is wrong.
+- **prospect theory** (thinking-fast-and-slow): value defined over changes from a reference point, with loss aversion about 2.25 and overweighting of rare events; framing the same fact as loss versus gain flips choices.
+- **prototype category** (brain-on-music): membership by resemblance to a central exemplar rather than by defining rules; how genres work, and why boundary fights are identity fights.
+- **provocability** (evolution-of-cooperation): immediate retaliation after a partner's defection.
+- **reactance** (influence-cialdini): motivational push to reclaim a freedom when it is restricted; scarcity's engine, and why censorship reads as amplification.
+- **reciprocity rule** (influence-cialdini): obligation to repay what another provides, even unrequested.
+- **rejection-then-retreat** (influence-cialdini): large ask, refusal, smaller target ask; the refusal reads as a concession to reciprocate.
+- **representativeness** (thinking-fast-and-slow): judging probability by similarity to a stereotype; produces base-rate neglect and the conjunction fallacy.
+- **salience** (power-of-us): the contextual switch that decides which identity in the stack is currently running behavior; a function of fit and accessibility.
+- **scarcity** (influence-cialdini): rare reads as valuable; bites hardest when the scarcity is new and rivalry is visible.
+- **schema** (brain-on-music): exposure-built model of what a genre or format does next; strength scales with prior exposure.
+- **shadow of the future** (evolution-of-cooperation): the weight of future interactions on present choices; the condition that decides whether a scene cooperates or defects.
+- **six weapons of influence** (influence-cialdini): reciprocity, commitment/consistency, social proof, authority, liking, scarcity; each a heuristic that substitutes a cue for evidence.
+- **Social Intuitionist Model** (righteous-mind): judgment from instant intuition, reasoning as post-hoc justification; persuasion flows elephant-to-elephant through messengers and social channels.
+- **social proof** (influence-cialdini): using others' behavior to define correct behavior; strongest under uncertainty and similarity.
+- **substitution** (thinking-fast-and-slow): answering an easier question in place of the hard one asked.
+- **superordinate identity** (power-of-us): a broader shared category that recasts rivals as one "we"; the fix for favoritism-driven conflict.
+- **System 1** (thinking-fast-and-slow): fast, automatic, associative cognition; the default driver of judgment.
+- **System 2** (thinking-fast-and-slow): slow, effortful, deliberate cognition; lazy, depletable, and mostly a rubber stamp.
+- **timbre** (brain-on-music): tone color, the attribute distinguishing two instruments at the same pitch and loudness; the lead dimension of modern popular music and the first thing to check on a spreading track.
+- **Tit for Tat** (evolution-of-cooperation): cooperate first, then mirror the partner's last move; won both tournaments by being nice, provocable, forgiving, and clear.
+- **trigger feature** (influence-cialdini): the single feature of a situation that releases a whole automatic response, borrowed from ethology.
+- **WEIRD** (righteous-mind): Western, Educated, Industrialized, Rich, Democratic samples; psychological outliers overrepresented in research.
+- **WYSIATI** (thinking-fast-and-slow): what you see is all there is; coherence built from available evidence, blindness to what is missing; confidence tracks story coherence, not evidence quality.
