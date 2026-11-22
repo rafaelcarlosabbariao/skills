@@ -21,6 +21,9 @@ values in `config.local.json` beside it (gitignored); its keys override `config.
 - **Sources are public domain only:** the Art Institute of Chicago, the Met, Cleveland (CC0 flags), and Wikimedia
   Commons (public-domain license). Works held in Italy and Commons photos of 3D works are flagged; `take` refuses
   them unless `--allow-flag "<reason>"` records why.
+  Time&Again posts may also use CC BY and CC BY-SA images, with the credit on the slide (Rafael, 2026-11-21, "yes", on
+  Vindolanda and Qesem Cave), and Library of Congress photos marked "no known restrictions". Model edits stay
+  public domain only.
 - **Faces stay as painted.** `edit` and `paste` refuse to run until `detect <asset> faces` has run, `edit` puts the
   original pixels back on every face, and `paste` refuses a box over a face. Hands and lettering are also weak spots
   for the model (Canva's guidance): aim edits at objects, clothing and props.
