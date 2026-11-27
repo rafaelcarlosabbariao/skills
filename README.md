@@ -31,7 +31,6 @@ One folder per skill. Fill any `config.json`, template or "Configure" note befor
 
 | Skill | What it does | Trigger |
 |---|---|---|
-| destrange | Screens a cultural claim, then validates or rebuilds it | "run the destrange" |
 | diffusion-contagion | Shelf: how things spread | "will this break out" |
 | gossip-reputation | Shelf: what talk about people does | "malice or maintenance?" |
 | language-change | Shelf: how words survive a ranked feed | "will this slang stick" |
@@ -59,3 +58,11 @@ Not included; get them upstream.
 ## License
 
 MIT. Fonts in `agnostic/media-create/fonts/` are SIL OFL (`OFL.txt`).
+
+## Retired
+
+Kept in `retired/`, out of every load path. Nothing is deleted.
+
+| Skill | What it did | Retired |
+|---|---|---|
+| destrange | Screens a cultural claim, then validates or rebuilds it | 2026-11-27 |
